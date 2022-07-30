@@ -14,6 +14,9 @@ These features would be supported:
 - [ ] Resources packaging
     - [ ] Installation for these resources OR
     - [ ] Packaging these resources into binary or executable
+- [ ] GTests and benchmarks support
+    - [ ] GTest support
+    - [ ] Benchmark support
 - [ ] Python3 support
     - [ ] pybind11 support
     - [ ] setup.py demo
