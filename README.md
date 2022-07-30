@@ -21,6 +21,10 @@ These features would be supported:
     - [ ] .clang-format and bash script for check/formatting
 - [ ] Quick start support
     - [ ] Script to quickly transfor this template as you wish
+- [ ] IDE support
+    - [ ] CLion settings
+    - [ ] VS Code settings
+    - [ ] Visual Studio settings
 
 ## Notes
 Here are some notes as preparing this project.

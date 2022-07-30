@@ -756,3 +756,6 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 # Projects
+# This is for VisualStudio
+CMakeSettings.json
+
