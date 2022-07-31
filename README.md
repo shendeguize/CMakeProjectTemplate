@@ -6,7 +6,7 @@ This is a CMake project template.
 These features would be supported:
 ## Features
 - [ ] CMake project management
-    - [ ] Basic project management
+    - [x] Basic project management
     - [ ] Complex project with submodules
     - [ ] Compile and install bash script support
 - [ ] 3rdparty/dependencies management
@@ -21,14 +21,19 @@ These features would be supported:
     - [ ] pybind11 support
     - [ ] setup.py demo
 - [ ] formater support
-    - [ ] .clang-format and bash script for check/formatting
+    - [x] .clang-format
+    - [ ] bash script for check/formatting
 - [ ] Quick start support
     - [ ] Script to quickly transfor this template as you wish
 - [ ] IDE support
     - [ ] CLion settings
     - [ ] VS Code settings
     - [ ] Visual Studio settings
-
+- [ ] Cross-Platform support
+  - [ ] Windows MinGW
+  - [ ] Linux GCC
+  - [ ] Linux clang
+  - [ ] Mac clang
 ## Notes
 Here are some notes as preparing this project.
 
