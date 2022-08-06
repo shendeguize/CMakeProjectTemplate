@@ -1,18 +1,19 @@
 # CMakeProjectTemplate
 Author: [@shendeguize](https://github.com/shendeguize)  
-Date: 2022.07.31
+Date: 2022.08.06
 
 This is a CMake project template.  
 These features would be supported:
 ## Features
 - [ ] CMake project management
     - [x] Basic project management
+    - [x] Install targets
     - [ ] Complex project with submodules
     - [ ] Compile and install bash script support
 - [ ] 3rdparty/dependencies management
     - [ ] 3rdparty/dependencies resources download and integration
 - [ ] Resources packaging
-    - [ ] Installation for these resources OR
+    - [ ] Installation for these resources
     - [ ] Packaging these resources into binary or executable
 - [ ] GTests and benchmarks support
     - [ ] GTest support

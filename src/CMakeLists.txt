@@ -40,20 +40,21 @@ if (OPTION_BUILD_STATIC_LIBS)
     set(PROJECT_STATIC_NAME ${PROJECT_NAME}_static)
     add_library(${PROJECT_STATIC_NAME} STATIC
         $<TARGET_OBJECTS:${PROJECT_OBJECT_NAME}>)
-    add_library(${PROJECT_NAME}::static ALIAS ${PROJECT_STATIC_NAME})
     set_target_properties(${PROJECT_STATIC_NAME} PROPERTIES OUTPUT_NAME ${PROJECT_NAME})
+    add_library(${PROJECT_NAME}::static ALIAS ${PROJECT_STATIC_NAME})
 endif ()
 
 if (OPTION_BUILD_SHARED_LIBS)
     set(PROJECT_SHARED_NAME ${PROJECT_NAME}_shared)
     add_library(${PROJECT_SHARED_NAME} SHARED
         $<TARGET_OBJECTS:${PROJECT_OBJECT_NAME}>)
-    add_library(${PROJECT_NAME}::shared ALIAS ${PROJECT_SHARED_NAME})
     set_target_properties(${PROJECT_SHARED_NAME} PROPERTIES OUTPUT_NAME ${PROJECT_NAME})
+    add_library(${PROJECT_NAME}::shared ALIAS ${PROJECT_SHARED_NAME})
 endif ()
 
-set(PROJECT_EXECUTABLE_NAME ${PROJECT_NAME}_executable)
+set(PROJECT_EXECUTABLE_NAME ${PROJECT_NAME}_runtime)
 add_executable(${PROJECT_EXECUTABLE_NAME} ${CMAKE_PROJECT_TEMPLATE_EXECUTABLE_CFILES})
+add_executable(${PROJECT_NAME}::runtime ALIAS ${PROJECT_EXECUTABLE_NAME})
 
 # **************************************** #
 # Targets Includes and linkages
@@ -91,3 +92,11 @@ target_include_directories(${PROJECT_EXECUTABLE_NAME} PUBLIC
 target_link_libraries(${PROJECT_EXECUTABLE_NAME} PUBLIC
     ${PROJECT_EXE_LINKAGE_LIBRARIES}
     )
+# **************************************** #
+# Targets Installation
+# **************************************** #
+set(PROJECT_INSTALL_TARGETS ${PROJECT_STATIC_NAME} ${PROJECT_SHARED_NAME} ${PROJECT_EXECUTABLE_NAME})
+if (OPTION_INSTALL_OBJECTS)
+    list(APPEND PROJECT_INSTALL_TARGETS ${PROJECT_OBJECT_NAME})
+endif ()
+install_targets(TARGETS ${PROJECT_INSTALL_TARGETS})

@@ -9,6 +9,7 @@ if (NOT DEFINED OPTIONS_SET)
     option(OPTION_VISIBILITY_HIDDEN "Hide symbol visibility for shared library. Default: OFF." OFF)
     option(OPTION_INSTALL_DEPENDENCIES "Install all dependencies and re-link them. Default OFF." OFF)
     option(OPTION_GLOB_RECURSE_FILES "Use GLOB_RECURSE to get all source files. Default OFF." OFF)
+    option(OPTION_INSTALL_OBJECTS "Install build object. Default OFF." OFF)
 
     set(OPTIONS_SET TRUE)
 
@@ -20,6 +21,7 @@ if (NOT DEFINED OPTIONS_SET)
     print_option(OPTION_VISIBILITY_HIDDEN)
     print_option(OPTION_INSTALL_DEPENDENCIES)
     print_option(OPTION_GLOB_RECURSE_FILES)
+    print_option(OPTION_INSTALL_OBJECTS)
 endif ()
 
 

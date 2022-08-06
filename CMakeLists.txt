@@ -17,6 +17,7 @@ project(${CMAKE_PROJECT_TEMPLATE_PROJECT_NAME})
 # **************************************** #
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake)
 include(${CMAKE_CURRENT_LIST_DIR}/cmake/configurations/Configurations.cmake)
+set(CMAKE_INSTALL_PREFIX ${CMAKE_PROJECT_TEMPLATE_INSTALL_PREFIX})
 
 # **************************************** #
 # Project Sub-Directories
@@ -26,5 +27,4 @@ add_subdirectory(src)
 # **************************************** #
 # Project Installation
 # **************************************** #
-
 
