@@ -1,6 +1,5 @@
 # Project: CMakeProjectTemplate
 # CMakeLists.txt
-
 cmake_minimum_required(VERSION 3.15)
 
 include(${CMAKE_CURRENT_LIST_DIR}/cmake/utils/CMakeUtils.cmake)
@@ -10,13 +9,15 @@ option(PRINT_OPTION "Print option. Default ON." ON)
 # Project Information
 # **************************************** #
 include(CMakeProjectTemplateConfig.cmake)
-project(${CMAKE_PROJECT_TEMPLATE_PROJECT_NAME})
+project(${CMAKE_PROJECT_TEMPLATE_PROJECT_NAME} C CXX)
+set(CMAKE_CXX_STANDARD 11)
 
 # **************************************** #
 # Project Configurations
 # **************************************** #
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake)
 include(${CMAKE_CURRENT_LIST_DIR}/cmake/configurations/Configurations.cmake)
+include(${CMAKE_PROJECT_TEMPLATE_3RDPARTY_DIR}/3rdpartyConfig.cmake)
 set(CMAKE_INSTALL_PREFIX ${CMAKE_PROJECT_TEMPLATE_INSTALL_PREFIX})
 
 # **************************************** #

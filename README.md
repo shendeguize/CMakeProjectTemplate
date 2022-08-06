@@ -12,6 +12,7 @@ These features would be supported:
     - [ ] Compile and install bash script support
 - [ ] 3rdparty/dependencies management
     - [ ] 3rdparty/dependencies resources download and integration
+    - [x] benchmark/gflags/glog/googletest/pybind11 supports
 - [ ] Resources packaging
     - [ ] Installation for these resources
     - [ ] Packaging these resources into binary or executable
@@ -21,9 +22,9 @@ These features would be supported:
 - [ ] Python3 support
     - [ ] pybind11 support
     - [ ] setup.py demo
-- [ ] formater support
+- [ ] formatter support
     - [x] .clang-format
-    - [ ] bash script for check/formatting
+    - [ ] Script for check/formatting
 - [ ] Quick start support
     - [ ] Script to quickly transfer this template as you wish
 - [ ] IDE support
@@ -33,6 +34,7 @@ These features would be supported:
 - [x] Cross-Platform support
   - [x] Windows MinGW
   - [x] Linux GCC
+
 ## Notes
 Here are some notes as preparing this project.
 
