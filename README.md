@@ -25,16 +25,14 @@ These features would be supported:
     - [x] .clang-format
     - [ ] bash script for check/formatting
 - [ ] Quick start support
-    - [ ] Script to quickly transfor this template as you wish
+    - [ ] Script to quickly transfer this template as you wish
 - [ ] IDE support
-    - [ ] CLion settings
-    - [ ] VS Code settings
-    - [ ] Visual Studio settings
-- [ ] Cross-Platform support
-  - [ ] Windows MinGW
-  - [ ] Linux GCC
-  - [ ] Linux clang
-  - [ ] Mac clang
+    - [ ] CLion settings readme
+    - [ ] VS Code settings readme
+    - [ ] Visual Studio settings readme
+- [x] Cross-Platform support
+  - [x] Windows MinGW
+  - [x] Linux GCC
 ## Notes
 Here are some notes as preparing this project.
 
