@@ -24,7 +24,7 @@ These features would be supported:
     - [ ] setup.py demo
 - [ ] formatter support
     - [x] .clang-format
-    - [ ] Script for check/formatting
+    - [x] Script for check/formatting: scripts/clang-format-helper.sh
 - [ ] Quick start support
     - [ ] Script to quickly transfer this template as you wish
 - [ ] IDE support

@@ -21,10 +21,10 @@ if (OPTION_GLOB_RECURSE_FILES)
     list(REMOVE CMAKE_PROJECT_TEMPLATE_PROJECT_CFILES ${CMAKE_CURRENT_LIST_DIR}/cmake_project_template_main.cpp)
 else ()
     set(CMAKE_PROJECT_TEMPLATE_PROJECT_CFILES
-        ${CMAKE_PROJECT_TEMPLATE_SOURCE_DIR}/lib_hello_world.cpp)
+        ${CMAKE_PROJECT_TEMPLATE_SOURCE_DIR}/cmake_project_template_libsrc.cpp)
 
     set(CMAKE_PROJECT_TEMPLATE_PROJECT_HFILES
-        ${CMAKE_PROJECT_TEMPLATE_INCLUDE_DIR}/cmake_project_template/lib_hello_world.h)
+        ${CMAKE_PROJECT_TEMPLATE_INCLUDE_DIR}/cmake_project_template/cmake_project_template_libsrc.h)
 endif ()
 set(CMAKE_PROJECT_TEMPLATE_EXECUTABLE_CFILES ${CMAKE_CURRENT_LIST_DIR}/cmake_project_template_main.cpp)
 
