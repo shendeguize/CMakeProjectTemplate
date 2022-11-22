@@ -1,8 +1,0 @@
-#ifndef CMAKE_PROJECT_TEMPLATE_LIB_HELLO_WORLD_H
-#define CMAKE_PROJECT_TEMPLATE_LIB_HELLO_WORLD_H
-
-#include <iostream>
-
-void hello_world();
-
-#endif // CMAKE_PROJECT_TEMPLATE_LIB_HELLO_WORLD_H

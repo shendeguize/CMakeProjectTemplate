@@ -1,6 +1,6 @@
 # CMakeProjectTemplate
 Author: [@shendeguize](https://github.com/shendeguize)  
-Date: 2022.08.06
+Date: 2022.11.22
 
 This is a CMake project template.  
 These features would be supported:
