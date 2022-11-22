@@ -12,7 +12,7 @@ These features would be supported:
     - [ ] Compile and install bash script support
 - [ ] 3rdparty/dependencies management
     - [ ] 3rdparty/dependencies resources download and integration
-    - [x] benchmark/gflags/glog/googletest/pybind11 supports
+    - [ ] benchmark/gflags/glog/googletest/pybind11 supports
 - [ ] Resources packaging
     - [ ] Installation for these resources
     - [ ] Packaging these resources into binary or executable
