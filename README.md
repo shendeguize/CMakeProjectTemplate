@@ -19,10 +19,13 @@ These features would be supported:
 - [ ] GTests and benchmarks support
     - [ ] GTest support
     - [ ] Benchmark support
+- [ ] Doxygen support
+    - [ ] Doxygen config
+    - [ ] Automatically update
 - [ ] Python3 support
     - [ ] pybind11 support
     - [ ] setup.py demo
-- [ ] formatter support
+- [x] formatter support
     - [x] .clang-format
     - [x] Script for check/formatting: scripts/clang-format-helper.sh
 - [ ] Quick start support
@@ -32,8 +35,8 @@ These features would be supported:
     - [ ] VS Code settings readme
     - [ ] Visual Studio settings readme
 - [x] Cross-Platform support
-  - [x] Windows MinGW
-  - [x] Linux GCC
+    - [x] Windows MinGW
+    - [x] Linux GCC
 
 ## Notes
 Here are some notes as preparing this project.
