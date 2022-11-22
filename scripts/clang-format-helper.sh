@@ -1,5 +1,5 @@
 #!/bin/bash
-# clang-format-helper.sh
+# scripts/clang-format-helper.sh
 
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
@@ -13,7 +13,7 @@ set -o pipefail
 
 usage="
 ${GREEN}
-Run gtest and generate coverage
+clang-format all files or compare with git clean state for ci check.
 Args:
     [-h] [--help] -- For help
     [-c] [--check] -- Check whether the whole project is in good state, only work under clean git state.
