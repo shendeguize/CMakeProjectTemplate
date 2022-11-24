@@ -759,5 +759,7 @@ fabric.properties
 # Projects
 # This is for VisualStudio
 CMakeSettings.json
+
+# Customized
 build*/
 install/
